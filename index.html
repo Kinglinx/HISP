@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      </head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Healthcare Provider Search</h1>
+
+        <!-- Search Box -->
+        <div class="input-group mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search by name">
+        </div>
+
+        <!-- Filters -->
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="providerType" class="form-label">Provider Type:</label>
+                <select id="providerType" class="form-select">
+                    <option value="">All</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="hospital">Hospital</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="insurance" class="form-label">Insurance:</label>
+                <select id="insurance" class="form-select">
+                    <option value="">All</option>
+                    <option value="RAMA">RAMA</option>
+                    <option value="MMI">MMI</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <ul id="results" class="list-group"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
